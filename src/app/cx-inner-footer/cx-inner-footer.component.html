@@ -1,0 +1,6 @@
+<div class="row pt-2 m-0">
+    <div class="col-3" *ngFor="let link of cxData?.children">
+        <h3>{{link.title}}</h3>
+        <div class="row m-0" *ngFor="let child of link.children"><a [href]="child.url">{{child.title}}</a></div>
+    </div>
+</div>

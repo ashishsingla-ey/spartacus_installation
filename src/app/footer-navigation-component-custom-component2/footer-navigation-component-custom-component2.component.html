@@ -1,0 +1,4 @@
+<div class="notice" *ngIf="(data$ | async) as d">
+    {{ d.notice }}
+  </div>
+  <app-cx-inner-footer [node]="node$ | async"></app-cx-inner-footer>
